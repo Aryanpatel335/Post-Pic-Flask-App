@@ -54,7 +54,7 @@ def home():
 @views.route('/delete_post/<int:user_id>/<int:post_id>')
 @login_required
 def delete_post(user_id, post_id):
-   #from the Item model, fetch the item with primary key item_id to be deleted
+
    
    if user_id == current_user.id:
         delete_post = Post.query.get(post_id)
