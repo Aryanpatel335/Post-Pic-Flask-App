@@ -1,1 +1,1 @@
-web: gunicorn main.py:post-pic-flask
+web: gunicorn main.py:post-pic
