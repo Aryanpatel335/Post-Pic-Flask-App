@@ -1,0 +1,23 @@
+.gradient-custom-2 {
+    
+    background: #fccb90;
+    
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+   
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.empty{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50px;
+    
+}
+
+#loading {
+    
+    display: none;
+    
+    cursor: wait;
+}

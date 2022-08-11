@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%block title%}Register{%endblock%}
+
+
+{%block content%}
+    <div class="container mt-4">
+    <form method="POST">
+        <h3 align="center">Register</h3>
+        <div class="form-group">
+            {{form.email.label}}
+            {{form.email(placeholder_="Enter Email", class_='form-control')}}
+
+        </div>
+        <div class="form-group">
+            {{form.username.label}}
+            {{form.username(placeholder_="Enter Username", class_='form-control')}}
+        </div>
+        <div class="form-group">
+            {{form.password.label}}
+            {{form.password(placeholder_="Enter Password", class_='form-control')}}
+        </div>
+        <div class="form-group">
+            {{form.password2.label}}
+            {{form.password(placeholder_="ReType Password", class_="form-control")}}
+        </div>
+        <br/>
+        <p>{{form.submit(class_="btn gradient-custom-2 btn-lg btn-primary")}}</p>
+        <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="{{url_for('auth.login')}}"
+            class="link-danger">Login</a></p>
+        
+    </form>
+    </div>
+{%endblock%}
