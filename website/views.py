@@ -16,7 +16,7 @@ def time_ago(date):
         return timeago.format(date, now)
 
         
-@views.route('/', methods=['GET', 'POST'])
+@views.route('/home', methods=['GET', 'POST'])
 @login_required
 def home():
     

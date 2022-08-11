@@ -8,12 +8,11 @@ import re
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login', methods=['GET', 'POST'])
+@auth.route('/', methods=['GET', 'POST'])
 def login():
-    # if current_user.is_authenticated:
-    #   return redirect(url_for('<shfjkdshfkjs>'))
-    form = LoginForm()
     logout_user()
+    form = LoginForm()
+    
     if request.method == 'POST':
         username = form.username.data
         password= form.password.data
