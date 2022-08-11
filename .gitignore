@@ -19,6 +19,7 @@ docs/_build/
 .vscode
 website/.env
 website/__pycache__
+website/mainDatabase.db
 # Coverage reports
 htmlcov/
 .coverage
